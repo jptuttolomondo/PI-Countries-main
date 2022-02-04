@@ -35,7 +35,7 @@ const getCountries= async(req, res=salida) =>{
 
             else{
 
-                const {page=0, size=9} = req.query
+                const {page=0, size=250} = req.query
                 const pais = await Pais.findAndCountAll({ 
                 limit: size,
                 offset: page*size

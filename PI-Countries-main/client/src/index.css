@@ -1,12 +1,17 @@
-body {
+/* body {
   background-color:rgb(235, 232, 199);
   margin: 0;
   font-family:cursive;
+  
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+  /*background-image:url('./countries.png') ;*/
+/*background-size: 100%;
+/*}
+ */
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+    
 }

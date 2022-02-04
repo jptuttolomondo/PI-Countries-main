@@ -1,17 +1,17 @@
-.barra{
+.barra{   display: flex;
     list-style-type: none;
     text-align: center;
  }
- .enlinea{
-    display: inline;
+ .enfila{display: inline;
+ 
     text-align: center;
     margin: 0 10px 0 0;
     padding: 2px 7px 2px 7;
-font-size: 20px;
-    color: rgb(195, 169, 21);
+font-size: 15px;
+    color: rgb(20, 106, 219);
     text-emphasis-style:initial;
-    background-color: #9ddddd;
-    border: 5px solid rgb(50, 32, 102);
+    background-color: #7abe9c;
+    border: 3px solid rgb(50, 32, 102);
     border-radius: 5px;
     text-decoration: none;
  }
