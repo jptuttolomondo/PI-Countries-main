@@ -71,7 +71,7 @@ case 'ORDENAR_POR_POBLACION_ASC':
 // )}
 
  //else 
- return {...state,paisesActivos: state.copiaDePaises.sort((a, b) => (
+ return {...state,paisesActivos: state.paisesActivos.sort((a, b) => (
   a.poblacion > b.poblacion ? 1 : a.poblacion < b.poblacion ? -1 : 0)
 )
  }

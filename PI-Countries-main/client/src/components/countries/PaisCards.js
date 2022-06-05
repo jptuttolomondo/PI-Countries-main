@@ -12,6 +12,7 @@ export const PaisCards=({onClose})=>{
     const countries = useSelector((state) => state.paisesInicial);
     const [currentPage, setCurrentPage] = useState(0);
     const paisfiltrado= useSelector((state)=>state.detallePaisInicial)
+    const filtro=useSelector((state)=>state.copiaDePaises)
 const continente=useSelector((state)=>state.paisesActivos)
 
 // const actualState=paisfiltrado.length<=0 &&continente.length<=0&&continente.length<=0 ? countries
@@ -19,12 +20,11 @@ const continente=useSelector((state)=>state.paisesActivos)
                                      
 const actualState=paisfiltrado.length<=0 &&continente.length<=0 ? countries
                 : continente.length>0?continente
-                                     : paisfiltrado;
-
+                                     : paisfiltrado
 
   
 const dispatch=useDispatch()
-useEffect(()=>{firstPage()
+useEffect(()=>{//firstPage()
 dispatch(CargarPaises())},[dispatch],actualState
 )
 //iba countries
